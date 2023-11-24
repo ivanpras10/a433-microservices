@@ -20,7 +20,7 @@ RUN npm ci
 COPY . .
 
 # Mengekspos port 3000 untuk dapat diakses dari luar container
-EXPOSE 3000
+EXPOSE 3001
 
 # Menetapkan perintah default yang akan dijalankan saat container berjalan, dalam hal ini 'npm start'
-CMD ["npm", "start"]
+CMD ["node", "index.js"]
