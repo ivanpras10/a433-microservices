@@ -23,4 +23,4 @@ COPY . .
 EXPOSE 3000
 
 # Menetapkan perintah default yang akan dijalankan saat container berjalan, dalam hal ini 'npm start'
-CMD ["npm", "start"]
+CMD ["node", "index.js"]
